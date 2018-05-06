@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns3:customer xmlns="http://www.example.org/customer" xmlns:ns2="http://www.example.org/address" xmlns:ns3="http://www.example.org/payment">
+    <CustomerId>567</CustomerId>
+    <CustomerName>Nitish</CustomerName>
+    <DateOfBirth>02/25/1992</DateOfBirth>
+    <Salary>150000.0</Salary>
+    <Address>
+        <ns2:AddressLine>1503</ns2:AddressLine>
+        <ns2:City>Charlotte</ns2:City>
+        <ns2:State>NC</ns2:State>
+        <ns2:Country>USA</ns2:Country>
+        <ns2:Zip>28262</ns2:Zip>
+    </Address>
+    <Payments>
+        <ns3:CardNumber>1234567890</ns3:CardNumber>
+        <ns3:CardName>Nitish Chinthagda</ns3:CardName>
+        <ns3:DateFrom>2019-11-01-05:00</ns3:DateFrom>
+        <ns3:DateTo>2021-11-01-05:00</ns3:DateTo>
+        <ns3:CardType>Debit</ns3:CardType>
+    </Payments>
+</ns3:customer>

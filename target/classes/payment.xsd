@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/payment" xmlns:tns="http://www.example.org/payment" elementFormDefault="qualified">
+
+    <complexType name="Payment">
+    	<sequence>
+    		<element name="CardNumber" type="int"></element>
+    		<element name="CardName" type="string"></element>
+    		<element name="DateFrom" type="date"></element>
+    		<element name="DateTo" type="date"></element>
+    		<element name="CardType">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="Debit"></enumeration>
+    					<enumeration value="Credit"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+</schema>
